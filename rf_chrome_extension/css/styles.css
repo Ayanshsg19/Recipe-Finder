@@ -1,0 +1,157 @@
+body {
+	background: url('../food.png');
+	font-size: 14px;
+	min-width: 397px;
+	max-width: 397px;
+	max-height: 397px;
+	margin: auto;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #c8871a;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb::hover {
+	background: #7e5105;
+}
+
+.main-content {
+	max-height: inherit;
+	overflow: overlay;
+}
+
+.main-content > div:first-child {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.main-content .heading {
+	color: #fff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background-color: #8c472e;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 3px solid #ffc107;
+    border-radius: 20px;
+}
+
+.main-content .recipe-el {
+	width: 100%;
+	padding: 3px 7px;
+	border: 2px solid #8c472e;
+	font-size: 14px;
+
+}
+
+.main-content .recipe-el:focus {
+	box-shadow: none;
+}
+
+.main-content .recipe-btn {
+	background-color: #8c472e;
+	border: 2px solid #8c472e;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size: 12px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.main-content .recipe-btn a, .main-content .tab-btn a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.main-content .tab-btn, .main-content .delAll-btn {
+	border: 2px solid #8c472e;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	font-size: 12px;
+	text-align: center;
+	font-weight: 500;
+}
+
+.main-content .tab-btn {
+	background-color: #8c472e;
+	width: 100%;
+}
+
+.main-content .delAll-btn {
+	background-color: #fff;
+	display: none;
+	width: 39%;
+}
+
+.main-content .delAll-btn a {
+	text-decoration: none;
+	color: #8c472e;
+}
+
+.main-content .url-list {
+	padding-bottom: 20px;
+	align-items: center;
+	margin: inherit;
+}
+
+.main-content .url-list div.row {
+	margin: inherit;
+}
+
+.main-content .url-list .col-9 {
+	width: 70%;
+	padding-right: 0;
+}
+
+.main-content .url-list .num-btn, .main-content .url-list .del-btn,  .main-content .url-list .copy-btn, .main-content .copyAll-btn {
+	font-weight: 600;
+	color: #fff;
+	background-color: #fb7b12;
+	padding-top: 4px;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+}
+
+.main-content .url-list .del-btn, .main-content .url-list .copy-btn, .main-content .copyAll-btn {
+	padding: 5px 9px;
+	margin-left: 10px;
+}
+
+.main-content .copyAll-btn {
+	display: none;
+	margin-top: 5px;
+}
+ 
+.main-content .url-list .recipe-url {
+	font-weight: 550;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	border-radius: 15px;
+	background-color: #fff;
+	height: 30px;
+	padding: 4px;
+}
+
+.main-content .url-list .recipe-url a {
+	text-decoration: none;
+	color: #fb7b12;
+}
+
+.main-content .url-list .del-btn a, .main-content .url-list .copy-btn a, .main-content .copyAll-btn a {
+	text-decoration: none;
+	color: #fff;
+}

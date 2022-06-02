@@ -1,0 +1,445 @@
+body {
+	background: url('../food.png');
+	font-size: 14px;
+	margin: auto;
+	font-family: 'Luxurious Roman', cursive;
+	min-width: 500px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #c8871a;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb::hover {
+	background: #7e5105;
+}
+
+.navbar .main-heading {
+	color: #f7f0dc;
+    font-weight: 700;
+    font-size: 220%;
+    text-align: center;
+    height: 5rem;
+    line-height: 4.5rem;
+    margin: 1rem;
+    width: 60%;
+    background-color: #8c472e;
+    border: 3px solid #ffc107;
+    border-radius: 2.5rem;
+}
+
+.navbar .nav-tile {
+	position: absolute;
+	right: 30px;
+	top: 100%;
+}
+
+.navbar .nav-tile ul {
+	flex-direction: column;
+}
+
+.navbar .nav-tile ul li {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background: #8c472e;
+	border: 3px solid #ffc107;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+.navbar .nav-tile ul .nav-item-title {
+	white-space: nowrap;
+    position: absolute;
+    top: 6px;
+    right: 70px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 15px;
+    width: fit-content;
+    display: none;
+}
+
+.navbar .nav-tile ul a {
+	color: #fff;
+	padding: 2px 0 0 8px;
+    line-height: 40px;
+}
+
+.navbar .nav-tile ul a:hover + .nav-item-title {
+	display: block;
+}
+
+.navbar .nav-tile ul a i {
+	font-size: 1.7rem;
+}
+
+.main-content {
+	margin-top: 4rem;
+}
+
+.main-content .content-info {
+	margin-bottom: 50px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.main-content .content-tabs {
+	text-align: center;
+}
+
+.main-content .content-tabs > div {
+	width: 46%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fd6076;
+	border-radius: 17px;
+	font-size: 1.1rem;
+	margin-bottom: 15px;
+	height: 35px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.main-content .content-tabs > div a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.main-content .what-to-do, .main-content .website-purpose {
+	padding: 10px 35px 35px;
+	height: 15rem;
+	background: #fff;
+	border-radius: 30px;
+	overflow: overlay;
+}
+
+.main-content .what-to-do .wtd-heading, .main-content .website-purpose .wp-heading {
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #c57b40;
+}
+
+.main-content .what-to-do .wtd-discription, .main-content .website-purpose .wp-discription {
+	font-size: 1rem;
+}
+
+.main-content .what-to-do .note > span:first-child {
+    background: yellow;
+    border-radius: 50%;
+    padding-left: 1.5px;
+    padding-right: 1.5px;
+}
+
+.main-content .what-to-do .note > span:last-child {
+	background: yellowgreen;
+    border-radius: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.main-content .search-container {
+	width: 60%;
+	height: 3rem;
+	border-radius: 1rem;
+	border: 2px solid black;
+	background: #fff;
+	margin-bottom: 50px;
+}
+
+.main-content .search-input {
+	width: 90%;
+	margin: 1px 1rem;
+	border: 0;
+}
+
+.main-content .search-input:focus {
+	box-shadow: none;
+}
+
+.main-content .search-container .search-btn {
+	color: #000;
+	line-height: 2.5rem;
+	width: 40px;
+    margin-left: 30px;
+}
+
+.main-content .ingredient-tile {
+	width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-content .ingredient-tile .single-tile {
+	margin-bottom: 15px;
+}
+
+.main-content .ingredient-tile .single-tile > div {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	border-radius: 15px;
+	width: 70%;
+	font-weight: 600;
+	padding: 6px 12px;
+	color: #8c472e;
+    border: 3px solid #ffc107;
+    display: inline-flex;
+}
+
+.main-content .ingredient-tile .item-val {
+	width: 80%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.main-content .ingredient-tile .del-btn {
+	width: 20%;
+	background: #8c472e;
+	border-radius: 50%;
+}
+
+.main-content .ingredient-tile .del-btn a {
+	color: #fff;
+}
+
+.main-content .final-btn, .main-content .del-all {
+	text-align: center;
+	font-weight: 700;
+    font-size: 1.5em;
+    border-radius: 22px;
+    margin-bottom: 50px;
+    padding: 4px;
+    display: none;
+}
+
+.main-content .final-btn {
+    background: #9acd32;
+    width: 65%;
+    margin-left: auto;
+}
+
+.main-content .del-all {
+    background: #842029;
+    width: 50%;
+    margin-right: auto;
+}
+
+.main-content .final-btn a, .main-content .del-all a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.main-content .recipe-tile > div {
+	margin-bottom: 50px;
+}
+
+.main-content .recipe-tile .single-menu-tile {
+	width: 90%;
+	margin: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-content .recipe-tile .single-menu-tile .recipe-link {
+	left: -30px;
+}
+
+.main-content .recipe-tile .single-menu-tile .r1 {
+	height: 200px;
+	background: #fff;
+	width: 100%;
+	margin: 0;
+}
+
+.main-content .recipe-tile .single-menu-tile .r1 .recipe-image {
+	padding-left: 0;
+}
+
+.main-content .recipe-tile .single-menu-tile .r1 .recipe-image img {
+	height: 200px;
+	width: 100%;
+}
+
+.main-content .recipe-tile .single-menu-tile .r1 .recipe-head {
+	overflow: overlay;
+	height: inherit;
+}
+
+.main-content .recipe-tile .single-menu-tile .r1 .recipe-head > div:first-child {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 10px;
+}
+
+.main-content .recipe-tile .single-menu-tile .r1 .recipe-head > div:first-child a {
+	text-decoration: none;
+	color: #000;
+}
+
+.main-content .recipe-tile .single-menu-tile .r1 .recipe-head > div:first-child a:hover {
+	text-decoration: underline;
+	color: #ffc107;
+}
+
+.main-content .recipe-tile .single-menu-tile .r2 {
+	background: #f3f3f3;
+	padding-top: 30px;
+	font-size: 15px;
+	width: 100%;
+	margin: 0;
+}
+
+.main-content .recipe-tile .single-menu-tile .r2 .recipe-serving > div:first-child {
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.main-content .recipe-tile .single-menu-tile .r2 .recipe-serving > div:last-child {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.main-content .recipe-tile .single-menu-tile .r2 .recipe-serving > div:last-child span {
+	font-size: 40px;
+}
+
+.main-content .recipe-tile .single-menu-tile .r2 ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.main-content .recipe-tile .single-menu-tile .r2 .main-nutrients li {
+	margin-bottom: 10px;
+	white-space: nowrap;
+}
+
+.main-content .recipe-tile .single-menu-tile .r2 .main-nutrients .label {
+	font-weight: 600;
+}
+
+.main-content .recipe-tile .single-menu-tile .r2 .other-info li {
+	margin-bottom: 6px;
+}
+
+.main-content .recipe-tile .single-menu-tile .r2 .other-info .quantity {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+footer {
+	background: rgba(0, 0, 0, 0.9);
+	color: #fff;
+}
+
+footer .row {
+	padding-top: 30px;
+}
+
+footer .row > div:first-child {
+	padding-left: 30px;
+}
+
+footer .col-4:first-child > div:last-child {
+	margin-top: 20px;
+}
+
+footer .col-4 .tbl-content {
+	margin-left: auto;
+    width: fit-content;
+    margin-right: auto;
+}
+
+footer .tbl-content .footer-head {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+footer .tbl-content > div:not(:first-child) {
+	margin-bottom: 5px;
+}
+
+footer .col-4 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+footer .col-4 .main-footer-head {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+footer .col-4 a i {
+	font-size: 1.2rem;
+	margin-right: 5px;
+}
+
+footer .cr {
+	padding-bottom: 10px;
+}
+
+@media (max-width: 856px) {
+	.navbar-brand {
+		width: 20%;
+		height: 20%;
+		margin-right: 0;
+	}
+	.navbar-brand img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 992px) {
+
+	.navbar .nav-tile {
+		position: initial;
+		margin: auto;
+	}
+
+	.navbar .nav-tile ul {
+		flex-direction: row;
+	}
+
+	.navbar .nav-tile ul .nav-item-title {
+		position: relative;
+		margin-left: 60px;
+	}
+
+	footer .col-4 {
+		width: 50%;
+	}
+
+	footer .col-4:first-child {
+		text-align: center;
+		width: 100%;
+	}
+
+	footer .col-4:first-child > div:first-child a {
+		font-size: 25px;
+	}
+
+	footer .col-4:first-child > div:first-child a img {
+		width: 50px;
+	}
+
+	footer .col-4:first-child > div:last-child {
+		margin-bottom: 30px;
+	}
+}

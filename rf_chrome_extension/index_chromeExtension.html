@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+  </head>
+<body>
+
+	<div class="main-content container">
+		<div>
+			<div class="heading">RECIPE FINDER</div>
+			<div class="row mx-0">
+				<div class="col-8 ps-0">
+					<input class="recipe-el form-control" type="search" placeholder="Enter recipe URL" aria-label="Search">
+				</div>
+				<div class="col-4 recipe-btn">
+					<a href="#">SAVE URL</a>
+				</div>
+				<div class="col-6 tab-btn">
+					<a href="#">SAVE CURRENT TAB</a>
+				</div>
+				<div class="col-5 delAll-btn">
+					<a href="#">DELETE ALL</a>
+				</div>
+				<div class="col-1 copyAll-btn">
+					<a href="#" title="copy all to clipboard">
+					<i class="bi bi-clipboard-plus"></i>
+				</a>
+			</div>
+			</div>
+		</div>
+		<div class="url-list"></div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js" id="navHomeButton"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<div class="col-lg-6 col-12">
+	<div class="position-relative single-menu-tile">
+		<div class="recipe-link position-absolute">
+			<a href="{{recipe_url}}" target="_blank">
+				<img src="recipe-ico.png">
+			</a>
+		</div>
+		<div class="r1 row">
+			<div class="recipe-image col-4"><img src="{{recipe_image}}"></div>
+			<div class="recipe-head col-8">
+				<div><a href="{{recipe_url}}" target="_blank">{{recipe_label}}</a></div>
+				<div>{{setIngredientsLine}}</div>
+			</div>
+		</div>
+		<div class="r2 row">
+			<div class="recipe-serving col-4">
+				<div>{{recipe_yield}} serving/s</div>
+				<div><span>{{recipe_calories}}</span> kcal</div>
+			</div>
+			<div class="main-nutrients col-4">{{setMainNutrientsLine}}</div>
+			<div class="other-info col-4">{{setOtherInfoLine}}</div>
+		</div>
+	</div>
+</div>

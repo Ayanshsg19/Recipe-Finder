@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "version": "1.0",
+    "name": "Recipe URL Finder",
+    "description" : "The following extension is a part of a website with the same name that saves any entered or active tab URL, to your local storage.",
+    "action": {
+        "default_popup": "index_chromeExtension.html",
+        "default_icon": "food_icon.png"
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
