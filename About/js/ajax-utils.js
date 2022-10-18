@@ -8,6 +8,7 @@ var ajaxUtils = {};
 
 // Returns an HTTP request object
 function getRequestObject() {
+  /* Ajax check */
   if (window.XMLHttpRequest) {
     return (new XMLHttpRequest());
   } 
