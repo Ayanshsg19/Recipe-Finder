@@ -1,3 +1,5 @@
+/* Ajax utilities */
+
 (function (global) {
 
 // Set up a namespace for our utility
