@@ -16,7 +16,7 @@ function getRequestObject() {
     return (new ActiveXObject("Microsoft.XMLHTTP"));
   } 
   else {
-    global.alert("Ajax is not supported!");
+    global.alert("Ajax is not supported in this OS!");
     return(null); 
   }
 }
