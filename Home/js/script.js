@@ -126,24 +126,24 @@ setIngredients = (ingredients) => {
 }
 
 setMainNutrients = (mainNut) => {
-	let finalHTML = "<ul>";
+	let finalHtml = "<ul>";
 	let html = mainNutHTML;
 	html = insertProperty(html, "label", mainNut.FAT.label);
 	html = insertProperty(html, "quantity", Math.round((mainNut.FAT.quantity)*10)/10);
 	html = insertProperty(html, "unit", mainNut.FAT.unit);
-	finalHTML += html;
+	finalHtml += html;
 	html = mainNutHTML;
 	html = insertProperty(html, "label", mainNut.CHOCDF.label);
 	html = insertProperty(html, "quantity", Math.round((mainNut.CHOCDF.quantity)*10)/10);
 	html = insertProperty(html, "unit", mainNut.CHOCDF.unit);
-	finalHTML += html;
+	finalHtml += html;
 	html = mainNutHTML;
 	html = insertProperty(html, "label", mainNut.FIBTG.label);
 	html = insertProperty(html, "quantity", Math.round((mainNut.FIBTG.quantity)*10)/10);
 	html = insertProperty(html, "unit", mainNut.FIBTG.unit);
-	finalHTML += html;
-	finalHTML += "</ul>";
-	return finalHTML;
+	finalHtml += html;
+	finalHtml += "</ul>";
+	return finalHtml;
 }
 
 setOtherInfo = (others) => {
@@ -173,12 +173,12 @@ rendDataApi = (data) => {
 	recipeTile.html(apiData);
 }
 
-tab1.click((e)=>{
+tab1.click((e) => {
 	e.preventDefault();
 	$(".load-home-snippets").load("html-snippets/what-to-do.html");
 })
 
-tab2.click((e)=>{
+tab2.click((e) => {
 	e.preventDefault();
 	$(".load-home-snippets").load("html-snippets/website-purpose.html");
 })
@@ -190,14 +190,14 @@ render = (list) => {
 	}
 	ingredientTile.html(singleIngreTile);
 
-	Array.from($(".del-btn")).forEach((btn, i)=>{
-		btn.addEventListener("click", (e)=>{
+	Array.from($(".del-btn")).forEach((btn, i) => {
+		btn.addEventListener("click", (e) => {
 			e.preventDefault();
 			ingredientList.splice(i, 1);
 			localStorage.setItem("ingredientList", JSON.stringify(ingredientList));
 			ingredientList = JSON.parse(localStorage.getItem("ingredientList"));
 			render(ingredientList);
-			if(!ingredientList.length) {
+			if(ingredientList.length === 0) {
 				finalBtn.css("display", "none");
 				delAll.css("display", "none");
 				localStorage.removeItem("ingredientList");
